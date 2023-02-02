@@ -50,12 +50,22 @@ h3 {
     border-radius: 15px;
 }
 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--bg-techs);
+}
+
 body {
     font-family: 'Merriweather Sans', sans-serif;
     background-color: var(--body-bg-color);
     color: var(--text-color);
 }
 
+/* CONTAINER */
 .container {
     width: 94%;
     max-width: 1400px;
@@ -65,11 +75,12 @@ body {
     justify-content: space-between;
 }
 
+/* ASIDE */
 aside {
     width: 30%;
 }
 
-/* HEADER MAIN */
+/* HEADER ASIDE */
 .header-main {
     padding: 32px;
     display: flex;
@@ -143,9 +154,16 @@ aside {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+
+    transition: 500ms;
 }
 
-/* EXPERIENCES */
+.skill:hover {
+    background-color: white;
+    color: var(--text-color);
+}
+
+/* EXPERIENCES AND EDUCATIONS */
 .experiences, .educations {
     padding: 30px 20px 10px;
 }
@@ -163,13 +181,11 @@ aside {
     font-weight: 700;
 }
 
-.period {
-    font-size: 12px;
+.period, .charge {
     font-weight: 100;
 }
 
 .charge {
-    font-size: 12px;
     font-weight: 400;
 }
 
@@ -291,7 +307,6 @@ article.post .post-resume .tags .tag {
     width: 128px;
     height: 128px;
 }
-
 
 footer {
     margin: 20px;
